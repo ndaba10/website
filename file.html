@@ -1,10 +1,75 @@
-<html>
-    <head>
-        <title>Skill build training </title>
-        <link rel="stylesheet" href="style.css">
-    </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Repair Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Computer Repair Shop</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-    <body>welcome to 1st html file</body>
-    <p>This is a paragraph</p>
+    <section id="home" class="home">
+        <div class="container">
+            <h2>We Fix Computers</h2>
+            <p>Your one-stop solution for all your computer repair needs.</p>
+            <a href="#services" class="btn">View Services</a>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service">
+                <h3>Virus Removal</h3>
+                <p>We remove malware, viruses, and trojans to keep your system safe.</p>
+            </div>
+            <div class="service">
+                <h3>Hardware Repair</h3>
+                <p>Broken screen? Faulty hard drive? We've got you covered.</p>
+            </div>
+            <div class="service">
+                <h3>Software Installation</h3>
+                <p>We install and update all your essential software efficiently.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Computer Repair Shop. All Rights Reserved.</p>
+        </div>
+    </footer>
+
     <script src="main.js"></script>
+</body>
 </html>
